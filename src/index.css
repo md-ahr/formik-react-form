@@ -33,16 +33,48 @@ html, body {
     margin-bottom: 10px;
 }
 
-.signup-form .form-group input {
+.signup-form .form-group input,
+.signup-form .form-group select {
     width: 500px;
     height: 48px;
     padding: 0 15px;
     border-radius: 5px;
     font-size: inherit;
+    border-width: 1px;
+}
+
+.signup-form .form-group select {
+    padding-left: 10px;
+}
+
+.signup-form .form-group input:focus,
+.signup-form .form-group select:focus,
+.signup-form .form-group textarea:focus {
+    outline: none;
+}
+
+.signup-form .form-group input[type="checkbox"],
+.signup-form .form-group input[type="radio"] {
+    width: 15px;
+    height: 15px;
+    vertical-align: middle;
+}
+
+.signup-form .form-group textarea {
+    resize: none;
+    width: 500px;
+    padding: 15px;
+    border-radius: 5px;
+    font-size: inherit;
+    border-width: 1px;
+}
+
+.signup-form .form-group label[for="acceptTerms"] {
+    margin-bottom: 3px;
 }
 
 .signup-form .form-group .btn {
-    width: 500px;
+    width: 200px;
     height: 56px;
     margin-top: 10px;
     font-size: 18px;
@@ -54,6 +86,11 @@ html, body {
 
 .signup-form .form-group .error {
     padding-top: 5px;
-    font-size: 14px;
+    font-size: 13px;
     color: red;
+    width: 500px;
+}
+
+.error-field {
+    border: 1px solid red;
 }
